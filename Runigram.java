@@ -154,9 +154,9 @@ public class Runigram {
 		int green2 = c2.getGreen();
 		int blue1 = c1.getBlue();
 		int blue2 = c2.getBlue();
-		int red = (int)(Math.round((alpha * red1) + ((1 - alpha) * red2)));
-		int green = (int)(Math.round((alpha * green1) + ((1 - alpha) * green2)));
-		int blue = (int)(Math.round(((alpha * blue1) + ((1 - alpha) * blue2))));
+		int red = (int)((alpha * red1) + ((1 - alpha) * red2));
+		int green = (int)((alpha * green1) + ((1 - alpha) * green2));
+		int blue = (int)(((alpha * blue1) + ((1 - alpha) * blue2)));
 		Color newcolor = new Color(red, green, blue);
 		return newcolor;
 	}
